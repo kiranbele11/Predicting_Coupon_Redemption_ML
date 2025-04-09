@@ -84,3 +84,6 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *.cover 
+finals_new.p
+tables_new.p
+*.p # Or more generally, ignore all .p files
