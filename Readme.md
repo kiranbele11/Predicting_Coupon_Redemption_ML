@@ -14,11 +14,11 @@ To **analyze consumer and coupon usage patterns** and build a predictive model t
 
 ## 📁 Repository Structure
 
-*   `Data_prep.ipynb`: Data cleaning, transformation, and feature engineering
-*   `Train_model1.ipynb`: Model training and baseline comparisons
-*   `dataset/`: Contains raw and/or cleaned data files 
-*   `README.md`: Project overview, setup, and findings (this file)
-*   `requirements.txt`: List of Python dependencies for the project
+* `Data_prep.ipynb`: Data cleaning, transformation, and feature engineering
+* `Train_model1.ipynb`: Model training, evaluation, and lift analysis
+* `dataset/`: Contains raw and/or cleaned data files 
+* `README.md`: Project overview, setup, and findings (this file)
+* `requirements.txt`: List of Python dependencies for the project
 
 ---
 
@@ -30,6 +30,7 @@ To **analyze consumer and coupon usage patterns** and build a predictive model t
 - **Hyperparameter tuning** and **cross-validation**
 - **Feature visualization** using [`FeatureViz`](https://github.com/parrt/feature-viz)
 - **Graphical Evaluation** (accuracy, precision, recall, F1-score bar plots)
+- 📈 **Lift Chart Analysis** to evaluate how well models prioritize true positive redemptions
 
 ---
 
@@ -41,7 +42,17 @@ To **analyze consumer and coupon usage patterns** and build a predictive model t
 | Random Forest       | 88.9%    | 88.5%     | 88.7%  | 88.6%    |
 | XGBoost             | 90.2%    | 89.8%     | 90.0%  | 89.9%    |
 
-📈 Visualized comparison available in the notebook!
+---
+
+## 🔍 Lift Analysis Overview
+
+The **Lift Chart** measures how much better the model is at identifying coupon redemptions than random guessing.
+
+> A lift of **2 at the 10% decile** means the model finds **2x more redemptions** in the top 10% of predicted users than random targeting would.
+
+This helps marketing teams **focus efforts and budgets on high-probability customers**, especially in imbalanced datasets.
+
+✅ The project includes a **custom lift function**, per-model probability scoring, and a **plot comparing lift across deciles** for all models.
 
 ---
 
@@ -49,7 +60,7 @@ To **analyze consumer and coupon usage patterns** and build a predictive model t
 
 - How to **identify and remove redundant features** with correlation analysis
 - Evaluating **model performance across multiple metrics**
-- The importance of feature visualization and explainability
+- How **lift** helps interpret model impact in business terms
 - Designing a **modular and interpretable ML pipeline**
 
 ---
