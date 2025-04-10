@@ -14,8 +14,12 @@ To **analyze consumer and coupon usage patterns** and build a predictive model t
 
 ## 📁 Repository Structure
 
-├── Data_prep.ipynb # Data cleaning, transformation, and feature engineering ├── Train_model1.ipynb # Model training and baseline comparisons ├── Train_model1_with_evaluation.ipynb # Extended version with visual evaluation ├── dataset/ # Raw and cleaned data (if applicable) ├── README.md # Project overview and highlights └── requirements.txt # All dependencies 
-
+*   `Data_prep.ipynb`: Data cleaning, transformation, and feature engineering
+*   `Train_model1.ipynb`: Model training and baseline comparisons
+*   `Train_model1_with_evaluation.ipynb`: Extended version with visual evaluation
+*   `dataset/`: Contains raw and/or cleaned data files (if applicable)
+*   `README.md`: Project overview, setup, and findings (this file)
+*   `requirements.txt`: List of Python dependencies for the project
 
 ---
 
