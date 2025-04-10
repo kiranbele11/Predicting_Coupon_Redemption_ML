@@ -59,12 +59,6 @@ To **analyze consumer and coupon usage patterns** and build a predictive model t
 
 ---
 
-## 👤 About Me
-
-Hi, I'm **[Your Name]**! I'm passionate about solving real-world problems using data and machine learning. This project represents my practical understanding of end-to-end ML workflows.
-
----
-
 ## 📌 How to Run
 
 ```bash
